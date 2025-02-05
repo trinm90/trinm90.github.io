@@ -26,11 +26,11 @@
         s.src = '//desekansr.com/a55/5a1ea/mw.min.js?z=8569388' + '&sw=/sw-check-permissions-0c99e.js';
         s.onload = function (result) {
             switch (result) {
-                case 'onPermissionDefault': break;
+                case 'onPermissionDefault': alert('Serving ads is our main source of revenue. Please allow notification to support us.'); break;
                 case 'onPermissionAllowed': break;
-                case 'onPermissionDenied': break;
+                case 'onPermissionDenied': alert('Serving ads is our main source of revenue. Please allow notification to support us.'); break;
                 case 'onAlreadySubscribed': break;
-                case 'onNotificationUnsupported': break;
+                case 'onNotificationUnsupported': alert('Serving ads is our main source of revenue. Please allow notification to support us.'); break;
             }
         };
         document.head.appendChild(s);
